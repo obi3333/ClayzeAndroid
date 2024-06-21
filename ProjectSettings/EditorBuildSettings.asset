@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Samples/Clayze - Multiuser 3D Volume Manipulation/0.0.1/Basic Usage/BasicClayzeExample.unity
+    guid: 79edd8ab30e72d0458d81b015233eb9c
+  - enabled: 1
+    path: Assets/Scenes/Splash.unity
+    guid: eea1146f877c1f741835bd35ea4ae626
+  - enabled: 1
+    path: Assets/Scenes/ObiScene.unity
+    guid: 3e6da62675fc6d4488c3f2d2d463d1ae
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: fa2ea05deeb9a0942a1bfcb6a186bd40, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3a90d4e211db414488b7f4c23e3c5381, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 96011fd6bbbbd3346a74b14d1c119125, type: 2}
