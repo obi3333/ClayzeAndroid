@@ -1,5 +1,6 @@
 using Clayze;
 using Clayze.Marching.Operations;
+using CommandSystem.Commands;
 using UnityEngine;
 
 namespace Marching
@@ -7,9 +8,7 @@ namespace Marching
     public class SpherePlacer : MonoBehaviour
     {
         public float radius;
-
-        public Transform LeftHand;
-        public Transform RightHand;
+        public CommandSystem.CommandSystem CommandSystem; 
         private float _distanceFromCamera = 5;
         public float maxSphereDistanceFromCamera;
         public float maxSphereSize;
@@ -55,7 +54,8 @@ namespace Marching
         private void Stamp()
         {
             SphereOp op = new SphereOp(transform.position,radius, _opType);
-            opCollection.Add(op);
+            SingleOperationCommand command = new SingleOperationCommand(opCollection, op);
+            CommandSystem.AddCommand(command);
         }
 
         private void OnDrawGizmos()
